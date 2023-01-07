@@ -1,0 +1,315 @@
+Part I
+
+
+1. PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away
+$ mkdir death_star && cd death_star
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/death_star
+$ touch darth_vader.txt
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/death_star
+$ touch princess_leia.txt
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/death_star
+$ touch storm_trooper.txt
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/death_star
+
+
+2. PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away
+$ mkdir tatooine && cd tatooine
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/tatooine
+$ touch luke.txt
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/tatooine
+$ touch ben_kenobi.txt
+
+
+3. PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/tatooine
+$ mkdir millenium_falcon && cd millenium_falcon
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/tatooine/millenium_falcon
+$ touch han_solo.txt
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/tatooine/millenium_falcon
+$ touch chewbaca.txt
+
+
+
+Part II
+
+4. PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/tatooine
+$ mv ben_kenobi.txt obi_wan.txt
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/tatooine
+$ ls
+luke.txt  millenium_falcon/  obi_wan.txt
+
+
+Part III
+
+5. PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/death_star
+$ cp ./storm_trooper.txt ../tatooine
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/death_star
+$ ls
+darth_vader.txt  princess_leia.txt  storm_trooper.txt  tatooine
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/death_star
+$ rm tatooine
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/death_star
+$ ls
+darth_vader.txt  princess_leia.txt  storm_trooper.txt
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/death_star
+$ cd ..
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away
+$ cd tatooine
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/tatooine
+$ ls
+luke.txt  millenium_falcon/  obi_wan.txt  storm_trooper.txt
+
+
+
+Part IV
+
+6. PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/tatooine
+$ mv ./luke.txt ../millenium_falcon
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/tatooine
+$ ls
+millenium_falcon/  obi_wan.txt  storm_trooper.txt
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/tatooine
+$ mv ./obi_wan.txt ../millenium_falcon
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/tatooine
+$ ls
+millenium_falcon/  storm_trooper.txt
+
+
+7. PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/tatooine
+$ ls
+millenium_falcon/  storm_trooper.txt
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/tatooine
+$ mv millenium_falcon/ ../
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/tatooine
+$ ls
+storm_trooper.txt
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/tatooine
+$ cd ..
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away
+$ ls
+death_star/  galaxy-far-far-away  millenium_falcon/  tatooine/
+
+
+8. PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away
+$ ls
+death_star/  galaxy-far-far-away  millenium_falcon/  tatooine/
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away
+$ mv millenium_falcon/ death_star/
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away
+$ ls
+death_star/  galaxy-far-far-away  tatooine/
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away
+$ cd death_star
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/death_star
+$ ls
+millenium_falcon/
+
+
+9. PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/death_star
+$ mv princess_leia.txt millenium_falcon/
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/death_star
+$ ls
+millenium_falcon/
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/death_star
+$ cd millenium_falcon
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/death_star/millenium_falcon
+$ ls
+princess_leia.txt
+
+
+10. PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away
+$ ls
+death_star/  obi_wan.txt  tatooine/
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away
+$ rm obi_wan.txt
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away
+$ ls
+death_star/  tatooine/
+
+
+11. PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away
+$ mkdir yavin_4
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away
+$ ls
+death_star/  tatooine/  yavin_4/
+
+
+12. PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/death_star
+$ mv millenium_falcon/ ../yavin_4/
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/death_star
+$ ls
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/death_star
+$ cd ..
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away
+$ cd yavin_4
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/yavin_4
+$ ls
+millenium_falcon/
+
+
+13. PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/yavin_4
+$ mkdir x_wing
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/yavin_4
+$ ls
+millenium_falcon/  x_wing/
+
+
+14. PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/yavin_4/millenium_falcon
+$ mv princess_leia.txt ../
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/yavin_4/millenium_falcon
+$ ls
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/yavin_4/millenium_falcon
+$ cd ..
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/yavin_4
+$ ls
+millenium_falcon/  princess_leia.txt  x_wing/
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/tatooine
+$ mv luke.txt ../
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/tatooine
+$ cd ..
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away
+$ ls
+death_star/  luke.txt  tatooine/  yavin_4/
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away
+$ mv luke.txt yavin_4/
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away
+$ cd yavin_4
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/yavin_4
+$ ls
+luke.txt  millenium_falcon/  princess_leia.txt  x_wing/
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/yavin_4
+$ mv luke.txt x_wing/
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/yavin_4
+$ cd x_wing
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/yavin_4/x_wing
+$ ls
+luke.txt
+
+
+15. PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/yavin_4
+$ mv millenium_falcon/ ../
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/yavin_4
+$ mv x_wing/ ../
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/yavin_4
+$ cd ..
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away
+$ ls
+death_star/  millenium_falcon/  tatooine/  x_wing/  yavin_4/
+
+
+16. PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away
+$ cd death_star
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/death_star
+$ mkdir tie_fighter_1
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/death_star
+$ mkdir tie_fighter_2
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/death_star
+$ mkdir tie_fighter_3
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/death_star
+$ ls
+darth_vader.txt tie_fighter_1/  tie_fighter_2/  tie_fighter_3/
+
+
+17. PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/death_star
+$ mv darth_vader.txt tie_fighter_1/
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/death_star
+$ cd tie_fighter_1
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/death_star/tie_fighter_1
+$ ls
+darth_vader.txt
+
+
+18. PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/death_star
+$ cp storm_trooper.txt tie_fighter_2/
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/death_star
+$ cp storm_trooper.txt tie_fighter_3/
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/death_star/tie_fighter_2
+$ ls
+storm_trooper.txt
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/death_star/tie_fighter_3
+$ ls
+storm_trooper.txt
+
+
+19. PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/death_star
+$ mv tie_fighter_1/ ../
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/death_star
+$ mv tie_fighter_2/ ../
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/death_star
+$ mv tie_fighter_3/ ../
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away/death_star
+$ cd ..
+
+PSXSLHP280@PSXSLHP280 MINGW64 ~/desktop/git-github-and-terminal/galaxy-far-far-away
+$ ls
+death_star/        tatooine/       tie_fighter_2/  x_wing/
+millenium_falcon/  tie_fighter_1/  tie_fighter_3/  yavin_4/
+
+
+
+Part VII
+
+20. 
