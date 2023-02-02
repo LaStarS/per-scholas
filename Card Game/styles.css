@@ -1,0 +1,81 @@
+*, {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 5rem);
+    grid-template-rows: 8rem 3rem 8rem;
+    gap: 1rem;
+    cursor: pointer;
+    justify-content: center;
+    padding-top: 2rem;
+    background-color: rgb(48, 172, 130);
+}
+
+.deck {
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    border-radius: .5rem;
+    color: white;
+    user-select: none;
+}
+
+.computer-deck {
+    background-color: orange;
+}
+
+.player-deck {
+    background-color: rgb(179, 63, 179);
+}
+
+.text {
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    background-color: white;
+}
+
+.card.red {
+    color: red;
+}
+
+.card.black {
+    color: black;
+}
+
+.card::before, .card::after {
+position: absolute;
+content: attr(data-value);
+font-size: 1rem;
+}
+
+.card::before {
+top: .5rem;
+left: .5rem;
+}
+
+.card::after {
+bottom: .5rem;
+right: .5rem;
+transform: rotate(180deg);
+}
